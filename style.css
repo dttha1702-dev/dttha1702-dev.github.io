@@ -2,97 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f9;
+    color: #444;
+    line-height: 1.4; /* sát nhau hơn */
 }
 
-header {
-    background: white;
-    padding: 15px 10%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* SECTION SPACING */
+section {
+    padding: 40px 10%; /* giảm khoảng cách */
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #0077ff;
-}
-
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.section {
-    padding: 60px 10%;
-}
-
-.section h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.skill-box {
-    background: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
+/* HEADINGS */
+h1 {
+    font-size: 38px;
     margin-bottom: 10px;
 }
 
-footer {
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    padding: 20px;
-    background: white;
-    margin-top: 40px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #f8c8dc, #f4a6c1);
+    color: #fff;
+    border-radius: 0 0 30px 30px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* sát nhau hơn */
+}
+
+.skill-box {
+    background-color: #f9d5e5;
+    color: #c94f7c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    background-color: #f4a6c1;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* PROJECTS */
+.project {
+    background: #ffe6ef;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
